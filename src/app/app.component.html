@@ -1,0 +1,24 @@
+
+ <!-- <button class="btn btn-primary" (click)="openComps = !openComps" [disabled]="blockBtn">Open</button>  -->
+
+
+<!-- <app-other-comp [@showState]="openComps ? 'shown' : 'notshown'"  (childDivOpen)="childDivOpen($event)"  *ngIf="openComps"></app-other-comp> -->
+
+<button class="btn btn-danger" (click)="div2=true && !div1=true">Angular</button>&nbsp;&nbsp;
+<button class="btn btn-primary" (click)="div1=true && div3=true && !div2=true">ReactJs</button>&nbsp;&nbsp;
+<button class="btn btn-success" (click)="div1=true && div2=true && !div3=true">NodeJs</button>&nbsp;&nbsp;
+
+
+<div *ngIf="div1">
+    <img src="assets/angular.png" width="450px">
+</div>
+
+<div *ngIf="div2">
+    <img src="assets/react.png" width="450px">
+</div>
+
+<div *ngIf="div3">
+   <img src="assets/nodejs.png" width="450px">
+</div>
+
+<!-- <span> {{selectedSport.key === 'walking' ? 'steps' : 'km'}} </span> -->
